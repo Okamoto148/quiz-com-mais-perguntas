@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>
+Quiz
+</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<style>
+.margem{
+margin: 50px;
+margin-left: 70px;
+}
+
+.linha{
+border: 3px solid black;
+border-radius: 10px;
+padding: 40px;
+background: #D8D8D8;
+margin-right: 150px;
+margin-left: 150px;
+}
+
+body{
+background-image: url("img/frutas.jpg");
+background-repeat: no-repeat;
+}
+</style>
+<body>
+<div class="margem">
+<h1 style="text-align: center">
+Quiz
+</h1>
+<div class="linha">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="mb-3">
+  <label for="formFile" class="form-label" style="font-size:25px"><b>Pergunta 1<br></b>É verdade que ferver os alimentos os tornam seguros para o consumo?</label>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" value="1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Verdadeiro
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" value="2">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Falso
+  </label>
+</div>
+<button type="button" class="btn btn-primary btn-sm" onclick="quiz()">Verificar</button>
+<div><br></div>
+<div id='resultado'></div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="mb-3">
+  <label for="formFile" class="form-label" style="font-size:25px"><b>Pergunta 2</b><br>Os alimentos secos tem maior validade?</label>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="pergunta2" value="1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Verdadeiro
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="pergunta2" value="2">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Falso
+  </label>
+</div>
+<button type="button" class="btn btn-primary btn-sm" onclick="quiz2()">Verificar</button>
+<div><br></div>
+<div id='resultado2'></div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="mb-3">
+  <label for="formFile" class="form-label" style="font-size:25px"><b>Pergunta 3</b><br>Eu posso guardar o alimento em temperatura ambiente e comer mais tarde?</label>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="pergunta3" value="1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Verdadeiro
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="pergunta3" value="2">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Falso
+  </label>
+</div>
+<button type="button" class="btn btn-primary btn-sm" onclick="quiz3()">Verificar</button>
+<div><br></div>
+<div id='resultado3'></div>
+</div>
+<button type="button" class="btn btn-primary btn-sm" onclick="resultadofinal()">Resultado Final</button>
+<div id='resultadofinal1'></div>
+</div>
+  </div>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="javascript.js"></script>
+</body>
+</html>
